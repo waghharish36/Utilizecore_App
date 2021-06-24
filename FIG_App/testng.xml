@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+	<parameter name="bRunInTestMode" value="true"></parameter>
+	<parameter name="bPrintScreen" value="true"></parameter>
+	<parameter name="CHROME_DRIVER_PATH" value="E:\\selenium\\Dependencies\\drivers\\chromedriver.exe"></parameter>
+	<parameter name="IE_DRIVER_PATH" value="E:\\selenium\\Dependencies\\drivers\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe"></parameter>
+	<parameter name="OUTPUT_PATH" value="E:\\selenium\\Projects\\utilizecore\\testoutput\\test-output\\"></parameter>
+	<parameter name="IMAGES_PATH" value="E:\\selenium\\Projects\\utilizecore\\testoutput\\"></parameter>
+	<parameter name="iWaitForElement" value="20"></parameter>
+	<parameter name="iWaitForThread" value="2000"></parameter>
+	<parameter name="iWaitForThread1" value="4000"></parameter>
+	<parameter name="iWaitForThread2" value="6000"></parameter>
+	<parameter name="sBaseURL" value="https://powercooling.staging.utilizecore.com"></parameter>
+                                    
+	<test name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="DATA_PATH" value="data/data.xls"></parameter>
+		<parameter name="SHEET" value="Sheet1"></parameter>
+		<parameter name="TESTCASES" value="1"></parameter>
+		<classes>
+			<class name="comboAppTests.ComboAppTest" />
+			<class name="lib.CommonClass"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+<!-- TO DO LIST
+ 1. Validations with DB call
+ 2. Download of PDF with IE
+ -->

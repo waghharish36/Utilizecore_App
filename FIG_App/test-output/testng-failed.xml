@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="TESTCASES" value="1"/>
+  <parameter name="sBaseURL" value="https://uateinsurance.mykotaklife.com/einsurance"/>
+  <parameter name="bRunInTestMode" value="true"/>
+  <parameter name="bPrintScreen" value="true"/>
+  <parameter name="DATA_PATH" value="data/data.xls"/>
+  <parameter name="SHEET" value="Sheet1"/>
+  <parameter name="OUTPUT_PATH" value="D:\\D Drive Data\\Ankush\\Selenium\\Projects\\I-One\\test-output\\"/>
+  <parameter name="iWaitForElement" value="20"/>
+  <parameter name="CHROME_DRIVER_PATH" value="D:\\D Drive Data\\Ankush\\Selenium\\Dependencies\\drivers\\chromedriver.exe"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="IE_DRIVER_PATH" value="D:\\D Drive Data\\Ankush\\Selenium\\Dependencies\\drivers\\IEDriverServer.exe"/>
+  <parameter name="iWaitForThread2" value="6000"/>
+  <parameter name="IMAGES_PATH" value="D:\\D Drive Data\\Ankush\\Selenium\\Projects\\I-One\\Images\\"/>
+  <parameter name="iWaitForThread" value="2000"/>
+  <parameter name="iWaitForThread1" value="4000"/>
+  <test name="Test(failed)">
+    <parameter name="TESTCASES" value="1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="DATA_PATH" value="data/data.xls"/>
+    <parameter name="SHEET" value="Sheet1"/>
+    <classes>
+      <class name="lib.CommonClass">
+        <methods>
+          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- lib.CommonClass -->
+      <class name="comboAppTests.ComboAppTest">
+        <methods>
+          <include name="ulipKotakTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- comboAppTests.ComboAppTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
