@@ -1,10 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>FIG_App</groupId>
-  <artifactId>FIG_App</artifactId>
+  <groupId>FIG1_App_</groupId>
+  <artifactId>FIG1_App_Mav</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   
-  
   <dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -98,6 +96,7 @@
 
 	</dependencies>
   
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -109,5 +108,5 @@
         </configuration>
       </plugin>
     </plugins>
-    	  </build>
+  </build>
 </project>

@@ -6,13 +6,14 @@
 	<parameter name="CHROME_DRIVER_PATH" value="E:\\selenium\\Dependencies\\drivers\\chromedriver.exe"></parameter>
 	<parameter name="IE_DRIVER_PATH" value="E:\\selenium\\Dependencies\\drivers\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe"></parameter>
 	<parameter name="OUTPUT_PATH" value="E:\\selenium\\Projects\\utilizecore\\testoutput\\test-output\\"></parameter>
-	<parameter name="IMAGES_PATH" value="E:\\selenium\\Projects\\utilizecore\\testoutput\\"></parameter>
+	<parameter name="IMAGES_PATH" value="E:\\selenium\\Projects\\utilizecore\testoutput\\"></parameter>
 	<parameter name="iWaitForElement" value="20"></parameter>
-	<parameter name="iWaitForThread" value="2000"></parameter>
+	<parameter name="iWaitForThread" value="3000"></parameter>
 	<parameter name="iWaitForThread1" value="4000"></parameter>
 	<parameter name="iWaitForThread2" value="6000"></parameter>
-	<parameter name="sBaseURL" value="https://powercooling.staging.utilizecore.com"></parameter>
-                                    
+	<parameter name="sBaseURL" value="https://powercolling.staging.utilizecore.com/sign_in"></parameter>
+      
+    
 	<test name="Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="DATA_PATH" value="data/data.xls"></parameter>
